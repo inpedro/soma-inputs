@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>SESAN - Obras Públicas</title>
+<link rel="icon" href="../sesan/logo/icone.png" type="image/png"/>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<input type="checkbox" id="check" >
+<label for="check" id="icone" style="left: 5px;"><img src="../sesan/logo/barra.png"></label>
+<div class="barra">	
+	<nav>
+		<a href="cadastro.html"><div class="link">Cadastro de usuários</div></a>
+		<a href="recursoescolha.php"><div class="link">Cadastro de Contratos</div></a>
+		<a href="consulta.php"><div class="link">Consultas</div></a>
+		<a href="sair.php"><div class="link">Sair</div></a>
+	</nav>	
+</div>
+<div >
+<section  class="forulariocadastro" >
+<br><br><br><br><br>
+
+<form id="user formulario_css" method="post" action="processa.php"  
+
+style="background-color: #fff; width: 600px; height: 400px; top: 100px; display: flex;
+border-radius: 13px; box-shadow:  1px 1px 4px black; ">
+
+	<img src="../sesan/logo/logoindex.png" id="logoindex"><br>
+
+		<label for="Nome">Nome:</label>
+		<input type="text" name="nome" class="campocad"   placeholder="Nome" maxlength="25" required><br>
+
+		<label for="email">E-mail:</label>
+		<input type="email" name="email" class="campocad" placeholder="E-mail" maxlength="25" required><br>
+
+		<label for="password">Senha:</label>
+		<input type="password" name="senha" class="campocad" placeholder="Senha" maxlength="10" style=" width: 220px;  " required>&nbsp;
+
+		<label for="niveldeacesso" >Nível de Acesso:</label>
+		<select name="select">
+			<option value="usuario" selected>Usuário</option>
+			<option value="adm" >Administrador</option>
+			<option value="Gestor">Gestor</option>
+		  </select>
+		<input type="number" name="niveldeacesso" id="niveldeacesso" class="campocad" required style=" width: 50px; text-align: center; " onclick="MyFunction()"><br>
+					  
+			    <input type="submit" value="Salvar" class="enviar">&nbsp;&nbsp;&nbsp;&nbsp;
+			    <input type="reset" value="Limpar" class="enviar"><br>
+			</div>
+</form>
+
+
+</section>
+
+</body>
+<script>
+	function MyFunction() {
+		var id = document.getElementById("niveldeacesso").value;
+		alert("Digite 1 para Usuário Administrador e 0 para Usuário Comum");
+	
+	}
+	</script>
+
+</html>
+

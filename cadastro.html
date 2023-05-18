@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SESAN - Obras Públicas</title>
+    <link rel="icon" href="../sesan/logo/icone.png" type="image/png"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+    <header id="cabecalho">
+
+        <label for="check" id="icone" style="left: 5px;"><img src="../sesan/logo/barra.png"></label>
+        <input type="checkbox" id="check" >
+        <div class="barra">	
+            <nav>
+                <a href="cadastro.html"><div class="link">Cadastro de usuários</div></a>
+                <a href="recursoescolha.php"><div class="link">Cadastro de Contratos</div></a>
+                <a href="consulta.php"><div class="link">Consultas</div></a>
+                <a href="sair.php"><div class="link">Sair</div></a>
+            </nav>	
+        </div>
+
+    </header>
+
+    <section id="main_principal">
+
+<form action="processa.php" class="form_design" method="post">
+    <img src="../sesan/logo/logoindex.png" id="logoindex"><br>
+    <h1> Cadastro de Usuário</h1>
+		<label for="Nome"></label>
+		<input type="text" name="nome" class="campocad"   placeholder="Nome completo" maxlength="40" size="30" required>
+        <br>
+		<label for="email"></label>
+		<input type="email" name="email" class="campocad" placeholder="E-mail" maxlength="40" size="30" required>
+        <br>
+		<label for="password"></label>
+		<input type="password" name="senha" class="campocad" placeholder="Digite a sua senha" maxlength="20" size="30"  required>&nbsp;
+        <br>
+
+		<label class="select" for="niveldeacesso">Nível de Acesso:</label>
+		<select id="nivel" name="niveldeacesso" required>
+			<option value="usuario" selected>Usuário</option>
+			<option value="adm" >Administrador</option>
+			<option value="Gestor">Gestor</option>
+		  </select>	
+          <br>		  
+			    <input type="submit" value="Salvar" class="enviar">&nbsp;&nbsp;&nbsp;&nbsp;
+			    <input type="reset" value="Limpar" class="enviar"><br>
+    </form>
+
+    </section>
+    
+    
+    
+</body>
+</html>

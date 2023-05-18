@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(-100deg, #2997f1, #3ad7f7);     
+    text-align: center;
+}
+/*BARRA LATERAL*/
+#icone {
+	cursor: pointer;
+	padding: 15px;
+	position: absolute;
+	z-index: 1;
+}
+#check{
+	display: none;
+	background-color: #f00;
+}
+.barra{
+	background-color: #333;
+	height: 100%;
+	width: 255px;
+	position: absolute;
+	left: -300px;
+	transition: all .3s linear;
+}
+.barra .link{
+	list-style: none;
+	background-color: rgba(11, 206, 255, 0.85);
+    border-radius: 10px;
+}
+nav{
+	width: 98%; /*tamanho dos labels do menu*/
+	position: absolute;
+	top: 60px;
+}
+nav a{
+	text-decoration: none;
+}
+
+.link{
+	color: #ffffff;
+	font-family: 'Arial';
+	font-size: 12pt;
+	padding: 15px;
+	border-bottom: 1px solid #222;
+	transition:  all .2s linear;
+	opacity: 0;
+	margin-top: 200px;
+}
+.link:hover{
+	background: linear-gradient(-100deg, #f4f5e4, #04cdf5);
+    color: black ;
+}
+#check:checked ~ .barra nav a .link{
+		opacity: 1;
+		margin-top: 0;
+		transition-delay: .2s;
+}
+#check:checked ~ .barra{
+		transform: translateX(300px);
+}
+/*TELA INDEX*/
+.formularioindex { /*estilo do form index*/
+    background-color: #fff; /*cor do form index*/
+    width: 500px; /*tamnhao caixa form index*/
+    height: 320px;
+    display: inline-block;
+    position: relative;
+    top: 100px; /*posição altura form index*/
+    border-radius: 15px; /*borda index*/   
+    box-shadow:  1px 1px 4px black;
+}
+.input-padrao { /*label index: email e senha*/
+    width: 400px;
+    height: 30px;
+    margin-top: 5px; /*margem entre bale e icone indez*/
+    margin-bottom: 22px /*espaço entre labels email e senha*/;
+    border-radius: 10px;
+    margin-left: 6px; /*espaço esquerda entre label e borda esquerda do form*/
+    cursor: pointer;
+    box-shadow:  1px 1px 4px black;  
+}
+#logoindex{/*logo do index*/
+    width: 300px;
+}
+.enviar {/*botao de entrar do index*/
+    border-radius: 15px;
+    color: black;
+    font-size: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+    height: 30px;
+    left: 30px; 
+    box-shadow:  1px 1px 4px black;
+}
+.enviar:hover { /*hover dos boltoes entrar, salvar e limpar*/
+    background: linear-gradient(-100deg, #f4f5e4, #04cdf5);
+    color: #fff;
+    transition: background-color .5s;
+}
+/*TELA CADASTRO DE USUARIO*/
+#formulariocadastro { /*estilo do form index*/
+    background-color: #fff; /*cor do form index*/
+    width: 500px; /*tamnhao caixa form index*/
+    height: 200px;
+    display: inline-block;
+    top: 100px; /*posição altura form index*/
+    border-radius: 13px; /*borda index*/   
+    box-shadow:  1px 1px 4px black;
+    position: absolute;
+    text-align: justify;
+}
+
+.campocad { /*campos da tela de cadastro: nome, email e senha*/
+    width: 400px;
+    height: 30px;
+    margin-top: -15px; /*margem entre label e icone index*/
+    margin-bottom: 20px /*espaço entre labels email e senha*/;
+    border-radius: 10px;
+    margin-left: 6px; /*espaço esquerda entre label e borda esquerda do form*/
+    cursor: pointer;
+    box-shadow:  1px 1px 4px black;
+}
+
+/*TELA CONTRATOS*/
+.formulariocontratos{
+    width: 285mm;
+    height:  360mm;
+    text-align: center;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow:  4px 4px 4px 2px black; 
+    padding: 15px;
+    margin: 0;
+    opacity: 40px;
+}
+.formulariobusca{
+    width: 285mm;
+    height:  120mm;
+    text-align: center;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow:  4px 4px 4px 2px black; 
+    padding: 15px;
+
+}
+
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: black;
+
+}
+input:hover{
+background-color: #dcdcdc;  
+ transition: background-color .5s;
+}
+textarea:hover{
+background-color: #dcdcdc;
+    transition: background-color .5s;
+}
+
+.btnCONV { /*BTN ADD do convenio*/
+    width: 25px;
+    background-color: #00C1E8;
+    border-radius: 10px;
+}
+.hide{ /*ESCONDER SELECT TOTAL DO T.A.*/
+   display: none;
+}
+.btnCONV:hover { /*hover dos boltoes entrar, salvar e limpar*/
+    background: linear-gradient(-100deg, #f4f5e4, #04cdf5);
+    color: #fff;
+    transition: background-color .5s;
+}
+.btnTA { /*BTN TERMO ADITIVO SOMA*/
+    width: 25px;
+    background-color: #00C1E8;
+    border-radius: 10px;
+}
+.btnTA:hover { /*hover dos boltoes TERMO ADITIVO SOMA*/
+    background: linear-gradient(-100deg, #f4f5e4, #04cdf5);
+    color: #fff;
+    transition: background-color .5s;
+}
+
